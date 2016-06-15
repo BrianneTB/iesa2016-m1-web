@@ -103,7 +103,7 @@ for score in individualScores{
 print(teamScore)
 
 
-//12 
+//12 optionnal
 
 var optionalString: String? = "Hello"
 print(optionalString == nil)
@@ -125,7 +125,7 @@ var optionalString3: String
 print ("optionalString2: \(optionalString2)")
 //print ("optionalString3: + \(optionalString3)")
 
-//14
+//14 switch case
 
 let vegetable = "red pepper"
 var vegetableComment: String
@@ -142,4 +142,34 @@ default:
 }
 
 print("result: \(vegetableComment)")
+
+
+//15 while and repeat
+
+var n = 2
+while n < 100 { n = n * 2 }
+print(n)
+
+var m = 2
+repeat { m = m * 2 } while m < 100
+print(m)
+
+
+//16
+
+var firstForLoop = 0
+for i in 0..<4 { firstForLoop += i }
+print(firstForLoop)
+
+var secondForLoop = 0
+for i in 0 ..< 4 { secondForLoop += i }
+print(secondForLoop)
+
+
+
+
+
+
+
+
 
