@@ -165,9 +165,13 @@ var secondForLoop = 0
 for i in 0 ..< 4 { secondForLoop += i }
 print(secondForLoop)
 
+//14
 
+func greet(name: String, day: String) -> Void {
+    "Hello \(name), today is \(day)."
+}
 
-
+greet("Bob", day: "Tuesday")
 
 
 
