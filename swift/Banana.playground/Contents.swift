@@ -212,7 +212,54 @@ print(statistics.sum)
 print(statistics.2)
 
 
+//18 arguments variables
 
+func sum0f(numbers: Int...) -> Int {
+    var sum = 0
+    for number in numbers { sum += number }
+    return sum
+}
+sum0f()
+sum0f(42, 597, 12)
+
+
+//19 nested functions
+
+func returnFifteen() -> Int {
+    var y = 10
+    func add() { y += 5 }
+    add()
+    return y
+}
+returnFifteen()
+
+//20 closure
+
+var numbers = [1, 2 ,3]
+numbers.map({
+    (number: Int) -> Int in
+    let result = 3 * number
+    return result
+})
+
+
+var prenom = ["balou", "bob", "trigrou"]
+prenom.map({
+    (nom: String) -> String in
+    return "Bonjour \(nom)"
+})
+
+
+var people = [(name: "Balou", age: 24)]
+people.map({
+    (person: (String, Int)) -> Int in
+    return person.1
+})
+
+
+
+let mappedNumbers = numbers.map({ number in 3 * number })
+print(mappedNumbers)
 
 
 
