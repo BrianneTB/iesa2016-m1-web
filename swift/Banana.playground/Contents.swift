@@ -43,7 +43,7 @@ var occupations = [
     "Kaylee" : "Mechanic" ]
 
 occupations["Jayne"] = "Public relations"
-shoppingList[10] = "too big?"
+//shoppingList[10] = "too big?"
 var strangeList = ["catfish", 33, 22.2]
 strangeList[1]
 
@@ -51,14 +51,47 @@ strangeList[1]
 
 var emptyArray = [String]()
 emptyArray.append("Hello")
-emptyArray.append(33) //
+//emptyArray.append(33) //
 let emptyDicionnary = [String : Float]()
 
 //07.bis
 
 var emptyArray2 = []
-emptyArray2.append(33) //
-emptyArray2.append("Hello")
+//emptyArray2.append(33) //
+//emptyArray2.append("Hello")
+
+
+//08
+//shoppingList[]
+//occupations[:]
+
+
+//09 if else
+
+var teamScore = 0
+var score = 0
+
+if score > 50 {
+teamScore += 3
+}else if score < 0{
+    
+    teamScore -= 0
+}else{
+    teamScore += 1
+}
+
+//10 for
+
+var individualScores = [1, 5, 8]
+
+for score in individualScores{
+    
+    score * 2
+}
+
+
+
+
 
 
 
