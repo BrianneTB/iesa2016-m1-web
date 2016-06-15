@@ -82,16 +82,64 @@ teamScore += 3
 
 //10 for
 
-var individualScores = [1, 5, 8]
+var individualScore = [1, 5, 8]
 
-for score in individualScores{
+for score in individualScore {
     
     score * 2
 }
 
+//11 optional & affectation
+
+let individualScores = [75, 43, 103, 87, 12]
+var teamScores = 0
+for score in individualScores{
+    if score > 50{
+        teamScore += 3
+    }else {
+        teamScore += 1
+    }
+}
+print(teamScore)
 
 
+//12 
 
+var optionalString: String? = "Hello"
+print(optionalString == nil)
+var optionalName: String? = "John Snow" //nil
+var greeting = "Hello!"
+if let name = optionalName {
+    greeting = "Hello, \(name)"
+}
 
+//13
 
+var optionalString1: String? = "Hello"
+print(optionalString1 == nil)
+var optionalString2: String?
+print(optionalString2 == nil)
+var optionalString3: String
+//print(optionalString3 == nil)
+
+print ("optionalString2: \(optionalString2)")
+//print ("optionalString3: + \(optionalString3)")
+
+//14
+
+let vegetable = "red pepper"
+var vegetableComment: String
+switch vegetable {
+    
+case "cucumber", "watercress":
+    vegetableComment = "That would make a good tea sandwich."
+    
+case let x where x.hasSuffix("pepper"):
+    vegetableComment = "Is it a spicy \(x)?"
+    
+default:
+    vegetableComment = "Everything tastes good in soup."
+}
+
+print("result: \(vegetableComment)")
 
