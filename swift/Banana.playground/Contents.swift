@@ -174,6 +174,52 @@ func greet(name: String, day: String) -> Void {
 greet("Bob", day: "Tuesday")
 
 
+//15 tuple
+
+let min = 10
+let max = 20
+let value = 15
+var range = (value, min, max)
+
+range.1
+
+
+//16
+
+func greet2(name: String, day: String) -> (a: String, b: String , c: String) {
+    return (name, day, "Hello \(name), today is \(day).")
+}
+
+var blob = greet2("Bob", day: "Tuesday")
+blob.a
+
+
+//17
+
+func calculateStatistics(scores: [Int]) -> (min: Int, max: Int, sum: Int) {
+    
+    var min = scores[0]
+    var max = scores[0]
+   var sum = 0
+for score in scores {
+    if score > max { max = score } else if score < min { min = score }
+    sum += score
+}
+return (min, max, sum)
+}
+let statistics = calculateStatistics([5, 3, 100, 3, 9])
+print(statistics.sum)
+print(statistics.2)
+
+
+
+
+
+
+
+
+
+
 
 
 
