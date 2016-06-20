@@ -1,5 +1,11 @@
-//: Playground - noun: a place where people can play
+//23
 
-import UIKit
-
-var str = "Hello, playground"
+class Shape {
+    
+    var sidesCount = 0
+    
+    func getInfo() -> String {
+        
+        return "A shape with \(sidesCouny) sides."
+    }
+}
