@@ -213,6 +213,23 @@ let threeOfSpades = Card(rank: .Three, suit: .Pique)
 let threeOfSpadesDescription = threeOfSpades.simpleDescription()
 
 
+// 36 protocole
+
+
+//protocol Personnage {
+//    
+//    
+//    func deplacer()
+//    
+//    
+//    var humain = marcher
+//    
+//}
+
+
+
+
+
 
 
 
