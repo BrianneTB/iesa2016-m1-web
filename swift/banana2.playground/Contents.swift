@@ -213,25 +213,33 @@ let threeOfSpades = Card(rank: .Three, suit: .Pique)
 let threeOfSpadesDescription = threeOfSpades.simpleDescription()
 
 
-// 36 protocole
+//36 protocole
 
 
-//protocol Personnage {
-//    
-//    
-//    func deplacer()
-//    
-//    
-//    var humain = marcher
-//    
-//}
+protocol ExempleProtocol {
 
+   var info: String { get }
+   func justDoIt(name:String) -> Int
+        mutating func adjust()
+
+}
 
 
 
+class Book {
+    var auteur: String = ""
+    var titre: String = ""
+    private func getDescription() -> String {
+        return "\(titre) by \(auteur)"
+    }
 
+}
 
+var livreDeLaJungle = Book()
+livreDeLaJungle.titre = "Le livre de la jungle"
+livreDeLaJungle.auteur = "me"
 
+livreDeLaJungle.getDescription()
 
 
 
